@@ -118,6 +118,7 @@ body {
 .contacts{
   display: flex;
   margin-left: auto;
+  align-items: center;
 }
 
 .contacts .item:not(:last-child){
@@ -127,19 +128,39 @@ body {
 .contacts .link {
   display: block;
   padding-top: 32px;
-  padding-bottom: 32px;  
+  padding-bottom: 32px;
+  margin-left: 10px; 
 
   color: var(--primary-text-color); 
 }
 
+
+.envelope{
+  width: 16px;
+  height: 12px;
+  color: var(--primary-text-color);
+  margin-right: 10px;
+
+}
+
+.smartphone{
+  width: 10px;
+  height: 16px;
+  margin-right: 10px;
+  color: var(--primary-text-color);
+}
+
+
 .site-nav .link:hover,
 .site-nav .link:focus,
 .contacts .link:hover,
-.contacts .link:focus,
+.contacts .link:focus, 
 .contacts-footer .link:hover,
 .contacts-footer .link:focus {
   color: var(--accent-color);
+  fill: var(--accent-color);
 }
+
 
 /* головна частина */
 .main-part {
