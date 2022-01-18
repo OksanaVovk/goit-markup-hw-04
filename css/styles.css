@@ -357,14 +357,42 @@ img{
   color: var(--background-color);
 }
 
-/* .site-item:hover,
-.site-item:focus{
-  background-color: var(--accent-color);
-  fill: var(--background-color);
-} */
+/* наші клієнти */
+.clients.section{
+  padding-top: 86px;
+}
 
+.clients-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 
+.clients-item .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 170px;
+  height: 92px;
+  color: var(--site-icon-color);
+  border: 1px solid var(--site-icon-color);
+  border-radius: 4px;
+}
+.clients-item:not(:last-child){
+  margin-right: 30px;
+}
 
+.icon-client{
+  width: 106px;
+  height: 60px;
+  fill: currentColor;
+}
+
+.clients-item .link:hover,
+.clients-item .link:focus{
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
 
 
 /* футер */
