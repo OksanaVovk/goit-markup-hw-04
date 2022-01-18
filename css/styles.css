@@ -426,6 +426,48 @@ img{
   text-decoration: none;
 }
 
+
+/* іконки сайтів футер */
+
+.site-footer{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+
+}
+
+.title-item.footer{
+  font-size: 14px;
+  line-height: 1.14;
+  text-transform: uppercase;
+  color: var(--background-color);
+  margin-bottom: 20px;
+
+}
+
+
+.icon-site.footer{
+  fill: var(--background-color);
+}
+
+.site-item.footer .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.1);;
+}
+
+.site-item.footer .link:hover,
+.site-item.footer .link:focus{
+  background-color: var(--accent-color);
+}
+
+
+
 /* Сторінка ПОРТФОЛІО */
 
 /* фільтр */
