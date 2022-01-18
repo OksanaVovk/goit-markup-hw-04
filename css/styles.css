@@ -11,6 +11,7 @@
   --footer-contacts-color: rgba(255, 255, 255, 0.6);
   --boder-color: #ECECEC;
   --boder-color-portfolio: #EEEEEE;
+  --site-icon-color: #AFB1B8;
   --boder-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
 }
 
@@ -138,7 +139,6 @@ body {
 .envelope{
   width: 16px;
   height: 12px;
-  color: var(--primary-text-color);
   margin-right: 10px;
 
 }
@@ -147,7 +147,6 @@ body {
   width: 10px;
   height: 16px;
   margin-right: 10px;
-  color: var(--primary-text-color);
 }
 
 
@@ -218,6 +217,22 @@ background-color: var(--banner-color);
 .specifics-item:not(:last-child){
   margin-right: 30px;
 } 
+
+.specifics-icon{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 270px;
+  height: 120px;
+  margin-bottom: 30px; 
+
+  background: var(--section-color);
+  border-radius: 4px;
+}
+.icon{
+  width: 70px;
+  height: 70px;
+}
 
 .title {
   margin-top: 0;
@@ -301,12 +316,56 @@ img{
 
 .workers-item .profession {
   margin-top: 0;
-  margin-bottom: 0px;
+  margin-bottom: 16px;
 
   font-size: 16px;
   line-height: 1.19;
   text-align: center;
 }
+
+.site-list{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+
+.site-item:not(:last-child){
+  margin-right: 10px;
+}
+
+.icon-site{
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+
+.site-item .link{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  color: var(--site-icon-color);
+  background-color: var(--background-color);
+}
+
+.site-item .link:hover,
+.site-item .link:focus{
+  background-color: var(--accent-color);
+  color: var(--background-color);
+}
+
+/* .site-item:hover,
+.site-item:focus{
+  background-color: var(--accent-color);
+  fill: var(--background-color);
+} */
+
+
+
+
 
 /* футер */
 .page-footer {
