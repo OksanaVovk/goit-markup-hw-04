@@ -4,7 +4,7 @@
   --accent-color: #2196f3;
   --accent-color-button: #188ce8;
   --background-color: #ffffff;
-  --banner-color: #2f303a;
+  --banner-color: #C4C4C4;
   --section-color: #f5f4fa;
   --footer-color: #2f303a;
   --logo-color: #000000;
@@ -160,13 +160,25 @@ body {
   fill: var(--accent-color);
 }
 
-
 /* головна частина */
 .main-part {
+max-width: 1600px;
+height: 600px;
+margin-left: auto;
+margin-right: auto;
 padding-top: 200px;
 padding-bottom: 200px;
-background-color: var(--banner-color); 
+background-image: linear-gradient(to right,
+rgba(47, 48, 58, 0.4),
+rgba(47, 48, 58, 0.4)
+),
+url("../images/baner.jpg");
+background-repeat: no-repeat;
+background-position:center;
+background-size: cover;
+background-color: var(--banner-color);
 }
+
 .main-title {
   margin-top: 0;
   margin-bottom: 30px;
@@ -395,7 +407,11 @@ img{
 }
 
 
-/* футер */
+/* футер */ 
+.conteiner.footer{
+  display: flex;
+ align-items: baseline;
+}
 .page-footer {
   background-color: var(--footer-color);
   padding-top: 60px;
@@ -406,6 +422,8 @@ img{
   display: flex;
   flex-direction: column;
   margin-top: 20px;
+  
+
 }
 
 .contacts-footer .item:not(:last-child){
@@ -434,6 +452,8 @@ img{
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
+  margin-left: 70px;
+
 
 }
 
