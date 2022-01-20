@@ -127,11 +127,12 @@ body {
 }
 
 .contacts .link {
-  display: block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-top: 32px;
   padding-bottom: 32px;
-  margin-left: 10px; 
-
+  
   color: var(--primary-text-color); 
 }
 
@@ -310,8 +311,8 @@ img{
 }
 
 .card-content{
-  padding-top: 30px;
-  padding-bottom: 30px;
+  padding: 30px 32px;
+  
 
   background-color: var(--background-color);
 }
@@ -448,10 +449,7 @@ img{
 /* іконки сайтів футер */
 
 .site-footer{
-  display: flex;
-  flex-direction: column;
   align-items: flex-start;
-  justify-content: center;
   margin-left: 70px;
 
 
