@@ -43,6 +43,19 @@ body {
   padding-bottom: 94px;
 } 
 
+.visually-hidden {
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  border: 0;
+  padding: 0;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  margin: -1px;
+}
+
 /* логотип */
 .logo {
   padding-top: 24px;
@@ -255,9 +268,6 @@ background-color: var(--banner-color);
   font-size: 36px;
   line-height: 1.17;
   text-align: center;
-}
-.title.hide{
-  display: none;
 }
 
 .specifics-item .title-item {
@@ -499,12 +509,6 @@ img{
   margin-right: 8px;
 }
 
-.main-title.work{
-  color: var(--title-text-color);
-  margin-bottom: 0;
-
-  display: none;
-}
 .filter {
   list-style: none;
 }
